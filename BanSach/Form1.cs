@@ -17,7 +17,7 @@ namespace BanSach
         {
             InitializeComponent();
         }
-
+        Modify modify = new Modify();
         private void button1_Click(object sender, EventArgs e)
         {
             string tentk = txttaikhoan.Text;
@@ -27,8 +27,14 @@ namespace BanSach
             else
             {
                 string query = " select * from TaiKhoan where   TenTaiKhoan = '"+tentk+"' and MatKhau = '"+matkhau+"'";
-                
-          
+                if (modify.TaiKhoan(query).Count!= 0)
+                {
+                    MessageBox.Show("Đăng Nhập Thành Công ! ","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);  
+                }
+              else
+                {
+                    MessageBox.Show("Tên Tài Khoản Hoặc Mật Khẩu Không Chinh Xác ! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
   

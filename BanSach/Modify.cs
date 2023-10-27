@@ -18,7 +18,8 @@ namespace BanSach
             List<TaiKhoan> taikhoan = new List<TaiKhoan>();
             using (SqlConnection sqlconnection = Connection.GetSqlConnection())
             {
-                sqlconnection.Open();
+                
+                    sqlconnection.Open();
                 sqlCommand = new SqlCommand(query, sqlconnection);
                 dataReader = sqlCommand.ExecuteReader();
                 while(dataReader.Read()) { }
