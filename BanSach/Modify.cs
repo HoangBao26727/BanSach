@@ -16,17 +16,17 @@ namespace BanSach
         public List<TaiKhoan> TaiKhoan(String query)
         {
             List<TaiKhoan> taikhoan = new List<TaiKhoan>();
-            using (SqlConnection sqlconnection = Connection.GetSqlConnection())
+            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
             {
                 
-                    sqlconnection.Open();
-                sqlCommand = new SqlCommand(query, sqlconnection);
+                    sqlConnection.Open();
+                sqlCommand = new SqlCommand(query, sqlConnection);
                 dataReader = sqlCommand.ExecuteReader();
                 while(dataReader.Read()) { }
                 {
                     taikhoan.Add (new TaiKhoan( dataReader.GetString(0), dataReader.GetString(1)));
                 }
-                sqlconnection.Close();
+                sqlConnection.Close();
             }
             return taikhoan;
         }
