@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanSach", "BanSach\BanSach.csproj", "{298EE7C7-DDC6-4FE7-B929-E7E142650966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{298EE7C7-DDC6-4FE7-B929-E7E142650966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298EE7C7-DDC6-4FE7-B929-E7E142650966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298EE7C7-DDC6-4FE7-B929-E7E142650966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298EE7C7-DDC6-4FE7-B929-E7E142650966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49953CD9-DEBB-4CB7-AAFC-078C276909A1}
+	EndGlobalSection
+EndGlobal
