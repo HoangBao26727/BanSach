@@ -8,6 +8,8 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace BanSach
 {
@@ -17,25 +19,38 @@ namespace BanSach
         {
             InitializeComponent();
         }
-        Modify modify = new Modify();
         private void button1_Click(object sender, EventArgs e)
         {
-            string tentk = txttaikhoan.Text;
-            string matkhau = txtmatkhau.Text;
-            if (tentk.Trim() == "") { MessageBox.Show("vui lòng nhập tên tài khoản ! "); return; }
-            else if (matkhau.Trim() == "") { MessageBox.Show("Vui lòng nhập mật khẩu !"); return; }
-            else
+
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-JDE5MGNQ\SQLEXPRESS;Initial Catalog=QuanLyBanSach;Integrated Security=True");
+            try
             {
-                string query = " select * from TaiKhoan where   TenTaiKhoan = '"+tentk+"' and MatKhau = '"+matkhau+"'";
-                if (modify.TaiKhoan(query).Count!= 0)
+                con.Open();
+                string tk = txttaikhoan.Text;
+                string mk = txtmatkhau.Text;
+                string sql = "select * from QuanLySach where TenTaiKhoan = '" + tk + "' and MatKhau'" + mk + "'";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlDataReader dta = cmd.ExecuteReader();
+                if (dta.Read() == true)
                 {
-                    MessageBox.Show("Đăng Nhập Thành Công ! ","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);  
+                    MessageBox.Show("Đăng Nhập Thành Công");
+
                 }
-              else
+                else
                 {
-                    MessageBox.Show("Tên Tài Khoản Hoặc Mật Khẩu Không Chinh Xác ! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Đăng Nhập Thất Bại");
+
                 }
+                con.Close();
+
+
             }
+           
+                 catch (Exception)
+                {
+                    MessageBox.Show("Lỗi Kết Nối");
+                }
+
         }
   
         private void txttaikhoan_TextChanged(object sender, EventArgs e)
@@ -53,6 +68,11 @@ namespace BanSach
         {
             dangky dangky = new dangky();
             dangky.ShowDialog();
+        }
+
+        private void txtmatkhau_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

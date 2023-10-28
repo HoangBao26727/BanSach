@@ -47,10 +47,10 @@
             this.button1.BackColor = System.Drawing.Color.Blue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button1.Location = new System.Drawing.Point(338, 385);
+            this.button1.Location = new System.Drawing.Point(323, 374);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 46);
-            this.button1.TabIndex = 16;
+            this.button1.Size = new System.Drawing.Size(199, 46);
+            this.button1.TabIndex = 3;
             this.button1.Text = "Đăng Nhập";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -62,7 +62,7 @@
             this.linkLabel_dangky.Location = new System.Drawing.Point(475, 329);
             this.linkLabel_dangky.Name = "linkLabel_dangky";
             this.linkLabel_dangky.Size = new System.Drawing.Size(79, 22);
-            this.linkLabel_dangky.TabIndex = 15;
+            this.linkLabel_dangky.TabIndex = 0;
             this.linkLabel_dangky.TabStop = true;
             this.linkLabel_dangky.Text = "Đăng Ký";
             this.linkLabel_dangky.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_dangky_LinkClicked);
@@ -74,7 +74,7 @@
             this.linkLabel_quenmk.Location = new System.Drawing.Point(247, 329);
             this.linkLabel_quenmk.Name = "linkLabel_quenmk";
             this.linkLabel_quenmk.Size = new System.Drawing.Size(135, 22);
-            this.linkLabel_quenmk.TabIndex = 14;
+            this.linkLabel_quenmk.TabIndex = 0;
             this.linkLabel_quenmk.TabStop = true;
             this.linkLabel_quenmk.Text = "Quên Mật Khẩu";
             this.linkLabel_quenmk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_quenmk_LinkClicked);
@@ -86,8 +86,9 @@
             this.txtmatkhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtmatkhau.Name = "txtmatkhau";
             this.txtmatkhau.Size = new System.Drawing.Size(205, 26);
-            this.txtmatkhau.TabIndex = 12;
+            this.txtmatkhau.TabIndex = 2;
             this.txtmatkhau.UseSystemPasswordChar = true;
+            this.txtmatkhau.TextChanged += new System.EventHandler(this.txtmatkhau_TextChanged);
             // 
             // txttaikhoan
             // 
@@ -96,8 +97,7 @@
             this.txttaikhoan.Margin = new System.Windows.Forms.Padding(4);
             this.txttaikhoan.Name = "txttaikhoan";
             this.txttaikhoan.Size = new System.Drawing.Size(205, 26);
-            this.txttaikhoan.TabIndex = 9;
-            this.txttaikhoan.UseSystemPasswordChar = true;
+            this.txttaikhoan.TabIndex = 1;
             this.txttaikhoan.TextChanged += new System.EventHandler(this.txttaikhoan_TextChanged);
             // 
             // pictureBox3
