@@ -89,6 +89,18 @@
     <Compile Include="QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="SachCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SachCa.Designer.cs">
+      <DependentUpon>SachCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SachTrinhTham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SachTrinhTham.Designer.cs">
+      <DependentUpon>SachTrinhTham.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
@@ -117,6 +129,12 @@
     </Compile>
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachCa.resx">
+      <DependentUpon>SachCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachTrinhTham.resx">
+      <DependentUpon>SachTrinhTham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
@@ -175,6 +193,24 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventures-of-Sherlock-Holmes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trinh-tham-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2df9dcb7bcd9f2e3336579f92eb684c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8935210306777.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled-1-compressed.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

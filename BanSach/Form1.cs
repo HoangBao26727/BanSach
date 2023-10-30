@@ -22,14 +22,14 @@ namespace BanSach
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-JDE5MGNQ\SQLEXPRESS;Initial Catalog=QuanLyBanSach;Integrated Security=True");
+            SqlConnection connection= new SqlConnection(@"Data Source=LAPTOP-JDE5MGNQ\SQLEXPRESS;Initial Catalog=QuanLyBanSach;Integrated Security=True");
             try
             {
-                con.Open();
+                connection.Open();
                 string tk = txttaikhoan.Text;
                 string mk = txtmatkhau.Text;
                 string sql = "select * from QuanLySach where TenTaiKhoan = '" + tk + "' and MatKhau'" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlCommand cmd = new SqlCommand(sql, connection);
                 SqlDataReader dta = cmd.ExecuteReader();
                 if (dta.Read() == true)
                 {
@@ -41,14 +41,13 @@ namespace BanSach
                     MessageBox.Show("Đăng Nhập Thất Bại");
 
                 }
-                con.Close();
 
 
             }
            
                  catch (Exception)
                 {
-                    MessageBox.Show("Lỗi Kết Nối");
+                    MessageBox.Show("Lỗi Kết Nối","Thông Báo !");
                 }
 
         }

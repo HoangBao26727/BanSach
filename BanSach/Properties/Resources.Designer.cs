@@ -113,6 +113,36 @@ namespace BanSach.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2df9dcb7bcd9f2e3336579f92eb684c1 {
+            get {
+                object obj = ResourceManager.GetObject("2df9dcb7bcd9f2e3336579f92eb684c1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8935210306777 {
+            get {
+                object obj = ResourceManager.GetObject("8935210306777", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap adventures_of_Sherlock_Holmes {
+            get {
+                object obj = ResourceManager.GetObject("adventures-of-Sherlock-Holmes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ảnh_gif {
             get {
                 object obj = ResourceManager.GetObject("ảnh gif", resourceCulture);
@@ -156,6 +186,36 @@ namespace BanSach.Properties {
         internal static System.Drawing.Bitmap gif {
             get {
                 object obj = ResourceManager.GetObject("gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trinh_tham_5 {
+            get {
+                object obj = ResourceManager.GetObject("trinh-tham-5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap untitled_1_compressed {
+            get {
+                object obj = ResourceManager.GetObject("untitled-1-compressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
